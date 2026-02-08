@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🍅 Pomodoro Timer</h1>
+        <p class="subtitle">Stay focused and productive</p>
+        <div class="status" id="status">Ready to focus</div>
+        <div class="timer" id="timer">25:00</div>
+        <div class="progress"><div class="fill" id="fill"></div></div>
+        
+        <div class="session-info">
+            <div><span>Sessions</span><b id="sessions">0</b></div>
+            <div><span>Total Time</span><b id="totalTime">0m</b></div>
+        </div>
+        
+        <label>Work Duration (minutes)</label>
+        <input type="text" id="duration" value="25" placeholder="Enter minutes">
+        
+        <div class="presets">
+            <button onclick="setTime(15)">15 min</button>
+            <button onclick="setTime(25)">25 min</button>
+            <button onclick="setTime(45)">45 min</button>
+        </div>
+        
+        <div class="controls">
+            <button id="start" onclick="start()">▶️ Start</button>
+            <button id="pause" onclick="pause()">⏸ Pause</button>
+            <button onclick="reset()">⟲ Reset</button>
+        </div>
+        
+        
+    </div>
+    <script src="java.js"></script>
+</body>
+</html>
